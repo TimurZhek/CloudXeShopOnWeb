@@ -260,3 +260,5 @@ pub/
 .devcontainer
 
 .azure
+/src/PublicApi/Properties/ServiceDependencies
+/src/PublicApi/Properties
