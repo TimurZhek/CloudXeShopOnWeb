@@ -58,8 +58,6 @@ public class CatalogItemListPagedEndpoint : IEndpoint<IResult, ListPagedCatalogI
 
         var items = await itemRepository.ListAsync(pagedSpec);
 
-        throw new Exception("Cannot move further");
-
         response.CatalogItems.AddRange(items.Select(_mapper.Map<CatalogItemDto>));
         foreach (CatalogItemDto item in response.CatalogItems)
         {
