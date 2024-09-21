@@ -151,7 +151,6 @@ if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
 }
-throw new Exception("Cannot move further");
 
 app.UseMiddleware<ExceptionMiddleware>();
 
